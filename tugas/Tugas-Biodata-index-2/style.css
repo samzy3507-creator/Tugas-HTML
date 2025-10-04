@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  /* line-height: fungsinya supaya teks rapi & mudah dibaca */
+  line-height: 1.6;
+  /*background: dipakai untuk mengatur latar belakang sebuah elemen  */
+  background:white;
+  color: #111;
+}
+
+.section-title {
+  /* padding-left: jarak dalam antara teks/konten dngn sisi kiri kotak elemen */
+  padding-left: 10px;
+  /*border-left: untuk memberi garis tepi disebelah kiri elemen  */
+  border-left: 4px solid #22c55e;
+  /* font-size: untuk mengatur ukuran huruf(teks) didalam elemen */
+  font-size: 17px;
+  /* font-weight: untuk mengatur ketebalan huruf */
+  font-weight: 600;
+  /*margin: mengatur jarak luar (ruang kosong diluar border elemen)  */
+  margin: 0 0 12px;
+  /* color: mengatur warna teks */
+  color: blue;
+}
+.site-header  {
+  /* text-align: utk mengatur perataan teks secara horizontal didlm sebuah elemen */
+  text-align: center;
+  /* padding: utk memberi jarak kedlm antara isi elemen (teks/gambar) dngn batas (border) nya */
+  padding: 40px 10px 20px;
+  color: #1e3a8a;
+}
+.photo {
+  /* utk membuat sudut elemen menjadi melengkung */
+  /* kalau nilainya besar, sudut bisa jadi linkaran/oval */
+  border-radius: 12px;
+}
+.avatar {
+  /* width: utk mengatur lebar elemen (kotak, gambar, teks container, dll) */
+  width: 220px;
+  /*height: untuk mengatur tinggi elemen (kotak, gambar, container, dll).  */
+  height: 220px;
+  /*object-fit: untuk mengatur cara pemotongan atau penyesuaian gambarnya  */
+  object-fit: cover;     
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+.box {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 20px;
+  /*box-shadow: untuk memberikan bayangan pada elemen (kotak, tombol, kartu, dll)  */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.container {
+    max-width: 924px;
+    margin: auto;
+    padding: 0 16px 40px;
+    /*display: untuk menentukan cara sebuah elemen ditampilkan di halaman web  */
+    display: flex;
+    /* flex-direction: utk menentukan arah utama (main axis) dari elemen2 anak (flex items) didlm container  */
+    flex-direction: column;
+    /*gap: untuk memberi jarak antar item di dalam flexbox (display: flex) atau grid (display: grid)  */
+    gap: 20px;
+}
+
+img {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.center-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.center-link a {
+  color: blue;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.header {
+  text-align: center;
+  padding: 40px 10px 20px;
+  color: #1e3a8a;
+}
