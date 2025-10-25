@@ -1,0 +1,114 @@
+body {
+  font-family: "inter", sans-serif;
+  background-color: #f9fafb;
+  color: #111;
+  line-height: 1.7;
+}
+
+.hero {
+  background-color: #dbeafe;
+  text-align: left;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.content {
+  background: #fff;
+  margin: 30px 20px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.hero h1 {
+  color: #2563eb;
+  font-weight: 700;
+  /*leter-spacing= jarak antar huruf */
+  letter-spacing: 1px;
+}
+.hero p {
+  font-style: italic;
+  color: #6b7280;
+}
+
+.content h2 {
+  color: #065f46;
+  /* font-weight= ketebalan huruf */
+  font-weight: 700;
+  margin-top: 0;
+}
+.highlight {
+  color: #dc2626;
+  font-weight: 600;
+  /*text-decoration: garis pada teks */
+  text-decoration:underline;
+}
+
+.quote {
+  background: #e0e7ff;
+  border-left: 5px solid #1e40af;
+  margin: 20px;
+  padding: 20px;
+  font-style: italic;
+  color: #1e3a8a;
+}
+
+.note {
+  background: #fef2f2;
+  border-left: 5px solid #ef4444;
+  margin: 20px;
+  padding: 20px;
+  color: #b91c1c;
+}
+
+footer {
+  text-align: right;
+  margin: 30px 20px;
+}
+.signature {
+  font-family: "Merriweather", serif;
+  color: #b91c1c;
+  font-style: italic;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 10px 20px;
+  color: #1e3a8a;
+  background: plum;
+  border-radius: 5px;
+  line-height: 50px;
+}
+
+.header h1 {
+  font-family: cursive;
+  /* letter-spacing:jarak antar huruf */
+  letter-spacing: 2px;
+  /* text-transform:HURUF BESAR ATAU KECIL */
+  text-transform: capitalize;
+}
+
+.header p {
+  /* word-spacing:jarak antar kata */
+  word-spacing: 2px;
+}
+
+.playwrite-de-sas {
+  font-family: "Playwrite DE SAS", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.signature {
+  font-family: "HTML", cursive;
+  font-size: 80px;
+  color: #b91c1c;
+  text-align: right;
+}
+
+@font-face {
+  font-family: "HTML";
+  src: url(fonts/Bismillah\ Script.ttf);
+}
