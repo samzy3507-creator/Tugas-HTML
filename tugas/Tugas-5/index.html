@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solusi Tugas CSS Component </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Solusi Tugas CSS Komponen</h1>
+  <!--cllas card= Memberi tampilan seperti kartu (background putih, bayangan, padding) -->
+  <section class="card">
+    <!-- cllas alert= Memberi tampilan kotak notifikasi (warna, border, teks) -->
+    <div class="alert">
+      <h2>1. Dismissible Alert (Positioning)</h2>
+     <p>ℹ️ Info: Pastikan data Anda sudah lengkap sebelum dikirim.</p>
+     <!-- alert succes = Fungsinya: menambahkan warna atau gaya khusus agar pengguna tahu jenis pesan apa itu. -->
+     <div class="alert success">
+      <!-- Tag <strong> digunakan untuk menandai teks yang penting atau ditekankan -->
+      <strong>Informasi penting</strong> Ini adalah contoh notifikasi sukses. klik 'X' untuk menutup.
+      <button type="button" onclick="this.parentElement.style.display='none'">❌</button>
+    </div>
+ </section>
+
+ <!-- class card = Membuat tampilan <section> menjadi seperti kartu (card) — latar putih, sudut membulat, dan ada bayangan. -->
+ <section class="card">
+    <h3>2. Profile Card dengan Status Badge</h3>
+    <div class="profile-card">
+      <img src="/Tugas-5/images/orang_kece.jpg" alt="Profile">
+      <div class="status"></div>
+      <h4>Dihyah</h4>
+      <p>Santri HSI BS Kelas X</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>3. Responsive Pricing Cards (Flexbox)</h3>
+    <div class="pricing-container">
+      <div class="pricing-card">
+        <h4 class="title">Paket Dasar</h4>
+        <p class="price">500 RB</p>
+        <p>12 Pengguna</p>
+        <p>5 GB Penyimpanan</p>
+        <button class="btn blue">Pilih Dasar</button>
+      </div>
+
+       <!-- pricing-card higlight = kelas tambahan untuk memberi gaya lebih menonjol pada satu kartu tertentu — biasanya untuk paket yang direkomendasikan atau populer.  -->
+      <div class="pricing-card highlight">
+        <h4 class="title">Paket PRO</h4>
+        <p class="price red">1 Jt</p>
+        <p><strong>37 Pengguna</strong></p>
+        <p><strong>20 GB Penyimpanan</strong></p>
+        <button class="btn red">Beli PRO</button>
+      </div>
+
+      <div class="pricing-card">
+        <h4 class="title">Paket Bisnis</h4>
+        <p class="price">2 JT</p>
+        <p>Tidak Terbatas</p>
+        <p>70 GB Penyimpanan</p>
+        <button class="btn green">Hubungi Kami</button>
+      </div>
+    </div>
+  </section>
+      
+</body>
+</html>

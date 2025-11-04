@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #111;
+  margin: 20px;
+}
+
+.h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.alert{
+  background-color: #d1ecf1;
+  color: #0c5460;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: relative;
+}
+
+
+.alert.success {
+  background-color: #d1ecf1;
+  border-left: 5px solid #0dcaf0;
+}
+
+.alert .close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  
+  font-weight: bold;
+}
+
+
+
+.profile-card {
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  /* position relative= bergerak sedikit dari posisi aslinya */
+  position: relative;
+}
+
+.profile-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.profile-card .status {
+  /* position absolute= keluar dari alur normal dpt
+  diposisikan dengan (tpo,left,right,bottom) */
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+  width: 15px;
+  height: 15px;
+  background: rgb(42, 179, 42);
+  border: 2px solid white;
+  border-radius: 50%;
+
+}
+
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* flex-wrap = elemen yang nggak muat di satu baris akan otomatis turun ke baris berikutnya. */
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pricing-card.highlight {
+  border: 2px solid indigo;
+}
+
+.title {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.price.red {
+  color: #f44336;
+}
+
+/* Tombol */
+.btn {
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn.blue { background-color: #007bff; }
+.btn.red { background-color: #f44336; }
+.btn.green { background-color: #28a745; }
+
+.btn:hover { opacity: 0.9; }
+
+
