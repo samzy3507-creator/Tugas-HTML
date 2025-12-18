@@ -1,0 +1,674 @@
+
+body {
+  font-family: Arial, sans-serif;
+  /* line-height: fungsinya supaya teks rapi & mudah dibaca */
+  line-height: 1.6;
+  /*background: dipakai untuk mengatur latar belakang sebuah elemen  */
+  background:white;
+  color: #111;
+  min-height: 100vh;
+}
+
+.section-title {
+  /* padding-left: jarak dalam antara teks/konten dngn sisi kiri kotak elemen */
+  padding-left: 15px;
+  /*border-left: untuk memberi garis tepi disebelah kiri elemen  */
+  border-left: 5px solid #22c55e;
+  /* font-size: untuk mengatur ukuran huruf(teks) didalam elemen */
+  font-size: 2;
+  /* font-weight: untuk mengatur ketebalan huruf */
+  font-weight: 600;
+  /*margin: mengatur jarak luar (ruang kosong diluar border elemen)  */
+  margin-bottom: 20px;
+  /* color: mengatur warna teks */
+  color: blue;
+}
+.header  {
+  /* text-align: utk mengatur perataan teks secara horizontal didlm sebuah elemen */
+  text-align: center;
+  /* padding: utk memberi jarak kedlm antara isi elemen (teks/gambar) dngn batas (border) nya */
+  padding: 30px  20px;
+  color: #1e3a8a;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.photo {
+  /* utk membuat sudut elemen menjadi melengkung */
+  /* kalau nilainya besar, sudut bisa jadi linkaran/oval */
+  border-radius: 10px;
+  height: 199px;
+  border: 3px solid white;
+}
+.avatar {
+  /* width: utk mengatur lebar elemen (kotak, gambar, teks container, dll) */
+  width: 220px;
+  /*height: untuk mengatur tinggi elemen (kotak, gambar, container, dll).  */
+  height: 220px;
+  /*object-fit: untuk mengatur cara pemotongan atau penyesuaian gambarnya  */
+  object-fit: cover;     
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+.box {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 20px;
+  /*box-shadow: untuk memberikan bayangan pada elemen (kotak, tombol, kartu, dll)  */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.container {
+    margin: auto;
+    padding: 0 16px 40px;
+    /*display: untuk menentukan cara sebuah elemen ditampilkan di halaman web  */
+    display: flex;
+    /* flex-direction: utk menentukan arah utama (main axis) dari elemen2 anak (flex items) didlm container  */
+    flex-direction: column;
+    /*gap: untuk memberi jarak antar item di dalam flexbox (display: flex) atau grid (display: grid)  */
+    gap: 20px;
+}
+
+img {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.center-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.center-link a {
+  color: blue;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+header {
+  text-align: center;
+  padding: 40px 10px 20px;
+  color: #1e3a8a;
+}
+
+
+header h1 {
+  color: #1d4ed8;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #6b7280;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+nav a {
+  text-decoration: none;
+  background-color: white;
+  color: #070707;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s;
+  text-align: center;
+}
+
+nav a:hover {
+  background: blue;
+}
+
+nav a.active {
+  background: #1d4ed8;
+  color: #fff;
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+    background: blue;
+}
+.gallery {
+    text-align: center;
+}
+.gallery h2 {
+    color:blue;
+    font-size: 35px;
+}
+.gallery p {
+    font-size: 18px;
+    color: #666
+}
+.gallery .card {
+    display: inline-block;
+    width: 200px;
+    /* border: 3px dotted red; */
+    /* border: 3px dashed #333; */
+    border: 1px solid #ddd;
+    margin: 10px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;    
+}
+.gallery .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.gallery .card figcaption {
+    font-size: 14px;
+    color: white;
+    background-color:blueviolet;
+    margin-top: -7;
+    padding: 4px;
+}
+
+table {
+  /* width = lebar */
+  width: 95%;
+  /* top = atas */
+  margin-top: 20px;
+  /* bottom = bawah */
+  margin-bottom: 20px;
+  /* left = kiri */
+  margin-left: auto;
+  /* right = kanan */
+  margin-right: auto;
+  /* padding = jarak di dalam elemen */
+  padding: 15px;
+  /* center = tengah */
+  text-align: center;
+}
+
+/* th = table head / kepala tabel */
+th {
+  background-color: BLUE;
+  color: #fff;
+}
+
+.header h1 {
+  color: #1a56db;
+  margin-bottom: 5px;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #374151;
+  display: block;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px 9px;
+  font-size: 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #1d4ed8;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+select {
+  cursor: pointer;
+  background-color: white;
+}
+
+
+.radio-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.radio-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  margin: 0;
+  cursor: pointer;
+}
+
+.radio-checkbox input[type="radio"],
+.radio-checkbox input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+
+
+button {
+  appearance: button;
+  background-color: #4D4AE8;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #4D4AE8;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+button:focus:not(:focus-visible),
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-color: #3733E5;
+  border-color: #3733E5;
+}
+
+button:focus {
+  background-color: #413FC5;
+  border-color: #3E3BBA;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+button:active {
+  background-color: #3E3BBA;
+  background-image: none;
+  border-color: #3A38AE;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+button:active:focus {
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+button:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+ } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   RESPONSIVE - TABLET (768px - 1023px)
+   ======================================== */
+@media screen and (max-width: 1023px) {
+  .container {
+    padding: 15px;
+  }
+
+  header {
+    padding: 25px 15px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header img {
+    width: 70px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .bio p {
+    text-align: left;
+    min-width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 10px 8px;
+  }
+
+  .photo {
+    max-width: 100%;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - MOBILE (480px - 767px)
+   ======================================== */
+@media screen and (max-width: 767px) {
+  body {
+    background: white;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  header {
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  header img {
+    width: 60px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .box,
+  .card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .section-title {
+    font-size: 1.3em;
+    padding-left: 10px;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .bio p {
+    font-size: 0.95em;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .gallery .card img {
+    height: 200px;
+  }
+
+  table {
+    font-size: 12px;
+    display: block;
+    overflow-x: auto;
+  }
+
+  th,
+  td {
+    padding: 8px 6px;
+    white-space: nowrap;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  ul,
+  ol {
+    margin-left: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - SMALL MOBILE (320px - 479px)
+   ======================================== */
+@media screen and (max-width: 479px) {
+  header h1 {
+    font-size: 1.4em;
+  }
+
+  header p {
+    font-size: 0.85em;
+  }
+
+  header img {
+    width: 50px;
+  }
+
+  nav a {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .section-title {
+    font-size: 1.2em;
+  }
+
+  .box,
+  .card {
+    padding: 12px;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  table {
+    font-size: 11px;
+  }
+
+  th,
+  td {
+    padding: 6px 4px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - DESKTOP/LAPTOP (1024px+)
+   ======================================== */
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 30px;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  header img {
+    width: 100px;
+  }
+
+  nav a {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 2em;
+  }
+
+  .box,
+  .card {
+    padding: 30px;
+  }
+
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+  }
+
+  .gallery .card img {
+    height: 200px;
+  }
+
+  .photo {
+    max-width: 500px;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  th,
+  td {
+    padding: 15px;
+  }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.text-center {
+  text-align: center;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
